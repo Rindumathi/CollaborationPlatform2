@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Home</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:link {
+    color:white;
+}
+
+a:visited {
+    color:#FFEBCD;
+}
+
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color:#9ACD32;
+}
+
+
+</style>
+</head>
+<body ng-app="app">
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#Aboutus">About Us</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#Register">Register</a></li>
+  <li style="float:right"><a href="#Signin">Sign In</a></li>
+</ul>
+<div ng-view></div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<!-- <script type="text/javascript" src="controllers/"></script> -->
+
+</html>
